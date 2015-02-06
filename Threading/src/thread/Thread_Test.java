@@ -9,28 +9,28 @@ public class Thread_Test {
 		final int lifeExpectancy = 29200;
 		log("Begining");
 		
-		Runner runner1 = new Runner("Runner 1", 5);
-		Runner runner2 = new Runner("Runner 2", 7);
-		Runner runner3 = new Runner("Runner 3", 10);
-		Jogger jogger1 = new Jogger("Jogger 1", 8);
-		Jogger jogger2 = new Jogger("Jogger 2", 10);
+//		Runner runner1 = new Runner("Runner 1", 5);
+//		Runner runner2 = new Runner("Runner 2", 7);
+//		Runner runner3 = new Runner("Runner 3", 10);
+//		Jogger jogger1 = new Jogger("Jogger 1", 8);
+//		Jogger jogger2 = new Jogger("Jogger 2", 10);
+//
+//		runner1.getThread().join();
+//		jogger2.interrupt();
+//		runner2.getThread().join();
+//		runner3.getThread().join();
+//		jogger1.join();
+//		jogger2.join();
 
-		runner1.getThread().join();
-		jogger2.interrupt();
-		runner2.getThread().join();
-		runner3.getThread().join();
-		jogger1.join();
-		jogger2.join();
-
-//		Person p1 = new Person("Person 1", lifeExpectancy);
-//		Person p2 = new Person("Person 2", lifeExpectancy);
-//		Person p3 = new Person("Person 3", lifeExpectancy);
-//		Person p4 = new Person("Person 4", lifeExpectancy);
+		Person p1 = new Person("Person 1", lifeExpectancy);
+		Person p2 = new Person("Person 2", lifeExpectancy);
+		Person p3 = new Person("Person 3", lifeExpectancy);
+		Person p4 = new Person("Person 4", lifeExpectancy);
 		
-//		p1.join();
-//		p2.join();
-//		p3.join();
-//		p4.join();
+		p1.join();
+		p2.join();
+		p3.join();
+		p4.join();
 		log("End");
 	}
 	
