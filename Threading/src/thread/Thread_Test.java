@@ -6,6 +6,7 @@ public class Thread_Test {
 	
 	public static void main(String[] args) throws Exception {
 
+		final int lifeExpectancy = 29200;
 		log("Begining");
 		
 		Runner runner1 = new Runner("Runner 1", 5);
@@ -20,6 +21,16 @@ public class Thread_Test {
 		runner3.getThread().join();
 		jogger1.join();
 		jogger2.join();
+
+//		Person p1 = new Person("Person 1", lifeExpectancy);
+//		Person p2 = new Person("Person 2", lifeExpectancy);
+//		Person p3 = new Person("Person 3", lifeExpectancy);
+//		Person p4 = new Person("Person 4", lifeExpectancy);
+		
+//		p1.join();
+//		p2.join();
+//		p3.join();
+//		p4.join();
 		log("End");
 	}
 	

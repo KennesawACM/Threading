@@ -8,6 +8,7 @@ public class Jogger extends Thread {
 	int speed;
 	
 	public Jogger(String name, int speed) {
+		
 		this.name = name;
 		this.speed = speed;
 		setName(name);
@@ -15,6 +16,7 @@ public class Jogger extends Thread {
 	}
 
 	public void run() {
+		
 		log("Begin");
 		try {
 			Thread.sleep(speed * 2000);
